@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/bt20"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt15"
+        android:layout_toRightOf="@+id/bt15"
+        android:text="@string/pc20" 
+        android:onClick="calc20pcTip"/>
+
+   
+
+    <EditText
+        android:id="@+id/etAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/enter_amount_here" 
+        android:digits="1234567890."
+        android:inputType="numberDecimal">
+        <requestFocus />
+     </EditText>
+
+    
+
+    <EditText
+        android:id="@+id/etCustomTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bt20"
+        android:ems="10"
+        android:hint="@string/custom_tip" />
+
+    <Button
+        android:id="@+id/bt10"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etCustomTip"
+        android:layout_alignParentLeft="true"
+        android:onClick="calc10pcTip"
+        android:text="@string/pc10" />
+
+    <Button
+        android:id="@+id/bt15"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt10"
+        android:layout_alignBottom="@+id/bt10"
+        android:layout_toRightOf="@+id/bt10"
+        android:onClick="calc15pcTip"
+        android:text="@string/pc15" />
+
+    <TextView
+        android:id="@+id/tvTipValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:text="@string/zero"/>
+
+    <TextView
+        android:id="@+id/tvTipIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTipValue"
+        android:layout_alignBottom="@+id/tvTipValue"
+        android:layout_toLeftOf="@+id/tvTipValue"
+        android:text="@string/tip_is_dollar" />
+
+</RelativeLayout>
