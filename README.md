@@ -5,7 +5,7 @@ A Tip Calculator utility app which allows a user to calculate the appropriate ti
 
 Time spent: 3 hours spent in total
 
-Completed user stories:
+<b>Completed user stories:</b>
 
 User is displayed the tip of specified percentage for specified entered amount.
 
@@ -19,8 +19,7 @@ Upon selecting tip amount, formatted tip value is displayed.
 
 (Optional) User can select custom tip percentage if desired
 
-Notes:
 
-Walkthrough of the user stories:
+<b>Walkthrough of the user stories:</b>
 
 Tip Calculator Android Application
