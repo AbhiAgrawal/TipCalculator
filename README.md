@@ -23,3 +23,5 @@ Upon selecting tip amount, formatted tip value is displayed.
 <b>Walkthrough of the user stories:</b>
 
 Tip Calculator Android Application
+
+![Video Walkthrough](tipcalc.gif)
